@@ -26,7 +26,7 @@ function LandingPage() {
         <title>Luxury Rail Travel | Blue Train</title>
         <meta
           name="description"
-          content="Luxury Rail Travel, Blue Train, Rovos Rail"
+          content="Luxury Rail Travel offers you customised packages on the Blue Train and Rovos Rail"
         />
         <meta
           name="robots"
