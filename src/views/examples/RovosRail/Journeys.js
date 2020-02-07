@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Helmet from "react-helmet"
 
 // reactstrap components
 import {
@@ -31,6 +32,31 @@ function Journeys() {
   });
   return (
     <>
+    <Helmet>
+        <title>Luxury Rail Travel | Rovos  Rail | Blue Train</title>
+        <meta
+          name="description"
+          content="Luxury Rail Travel, Blue Train, Rovos Rail"
+        />
+        <meta
+          name="robots"
+          content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <link rel="canonical" href="https://wwww.luxuryrailtravel.co.za" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Luxury Rail Travel | Blue Train" />
+        <meta
+          property="og:description"
+          content="Luxury Rail Travel, Blue Train, Rovos Rail"
+        />
+        <meta property="og:url" content="https://wwww.luxuryrailtravel.co.za" />
+        <meta property="og:site_name" content="Luxury Rail Travel" />
+        <meta property="og:image" content="blue4.jpg" />
+        <meta property="og:image:secure_url" content="blue4.jpg" />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="720" />
+      </Helmet>
       <WhiteNavbar />
       <Header />
       <div className="wrapper">
