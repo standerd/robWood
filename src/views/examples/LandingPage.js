@@ -32,15 +32,15 @@ function LandingPage() {
           name="robots"
           content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
-        <link rel="canonical" href="https://wwww.luxuryrailtravel.co.za" />
+        <link rel="canonical" href="https://luxuryrailtravel.co.za" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Luxury Rail Travel | Blue Train" />
+        <meta property="og:title" content="Luxury Rail Travel | Blue Train |Rovos Rail" />
         <meta
           property="og:description"
           content="Luxury Rail Travel, Blue Train, Rovos Rail"
         />
-        <meta property="og:url" content="https://wwww.luxuryrailtravel.co.za" />
+        <meta property="og:url" content="https://luxuryrailtravel.co.za" />
         <meta property="og:site_name" content="Luxury Rail Travel" />
         <meta property="og:image" content="blue4.jpg" />
         <meta property="og:image:secure_url" content="blue4.jpg" />
