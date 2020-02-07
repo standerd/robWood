@@ -1,5 +1,5 @@
 import React from "react";
-import Helmet from "react-helmet";
+import Helmet from "react-helmet"
 import { Link } from "react-router-dom";
 
 // reactstrap components
@@ -22,29 +22,30 @@ function LandingPage() {
   });
   return (
     <>
-      <Helmet>
-        <title>Luxury Rail Travel</title>
-        <meta property="og:site_name" content="" />
-        <meta
-          property="og:title"
-          content="The Blue Train - Specials, Packages and Reservations"
-        />
-        <meta
-          property="og:description"
-          content="Blue Train Tickets and Special Packages - Luxury Train Travel in South Africa with Train Safaris connecting Cape Town, Pretoria and Durban. Blou Trein pakette en kaartjies."
-        />
-
-        <meta property="og:url" content="https://www.luxuryrailtravel.co.za/" />
-
+    <Helmet>
+        <title>Luxury Rail Travel | Blue Train</title>
         <meta
           name="description"
-          content="Blue Train Tickets and Special Packages - Luxury Train Travel in South Africa with Train Safaris connecting Cape Town, Pretoria and Durban. Blou Trein pakette en kaartjies."
+          content="Luxury Rail Travel offers you customised packages on the Blue Train and Rovos Rail"
         />
         <meta
-          name="keywords"
-          content="the Blue Train, Blue Train, Blou Trein, bloutrein, specials, packages, pakette, pretoria, cape town, durban"
+          name="robots"
+          content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="canonical" href="https://luxuryrailtravel.co.za" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Luxury Rail Travel | Blue Train |Rovos Rail" />
+        <meta
+          property="og:description"
+          content="Luxury Rail Travel, Blue Train, Rovos Rail"
+        />
+        <meta property="og:url" content="https://luxuryrailtravel.co.za" />
+        <meta property="og:site_name" content="Luxury Rail Travel" />
+        <meta property="og:image" content="blue4.jpg" />
+        <meta property="og:image:secure_url" content="blue4.jpg" />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="720" />
       </Helmet>
       {/* <ScrollTransparentNavbar />
        */}
