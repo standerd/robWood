@@ -33,6 +33,7 @@ import ContactUs from "views/examples/ContactUs";
 // others
 
 ReactDOM.render(
+  
   <BrowserRouter>
     <Switch>
       <Route path="/ratesB" render={props => <Rates {...props} />} />
