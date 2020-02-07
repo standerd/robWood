@@ -154,7 +154,12 @@ function WhiteNavbar() {
                 <DropdownMenu
                   aria-labelledby="navbarDropdownMenuLink1"
                   right
-                ></DropdownMenu>
+                >
+                  <DropdownItem to="/shongDetails" tag={Link}>
+                    <i className="now-ui-icons travel_info"></i>
+                    Details
+                  </DropdownItem>
+                </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
                 <Button

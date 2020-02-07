@@ -27,6 +27,7 @@ import NamDetails from "views/examples/RovosRail/namDetails";
 import CollageDetails from "views/examples/RovosRail/collDetails";
 import DARDetails from "views/examples/RovosRail/darDetails";
 import LOBDetails from "views/examples/RovosRail/lobDetails";
+import ShongDetail from "views/examples/Shongololo/Details";
 import LandingPage from "views/examples/LandingPage.js";
 import ContactUs from "views/examples/ContactUs";
 // others
@@ -70,12 +71,16 @@ ReactDOM.render(
       />
       <Route path="/darDetails" render={props => <DARDetails {...props} />} />
       <Route path="/lobDetails" render={props => <LOBDetails {...props} />} />
+      <Route
+        path="/shongDetails"
+        render={props => <ShongDetail {...props} />}
+      />
       <Route path="/contact" render={props => <ContactUs {...props} />} />
       <Route
-        path="/landing-page"
+        path="/"
         render={props => <LandingPage {...props} />}
       />
-      <Redirect to="/landing-page" />
+      <Redirect to="/" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
