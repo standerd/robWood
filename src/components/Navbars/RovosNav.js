@@ -75,7 +75,7 @@ function WhiteNavbar() {
                   </p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
-                  <DropdownItem to="/details" tag={Link}>
+                  <DropdownItem to="/details" tag={Link} onClick={setCollapseOpen(false)}>
                     <i className="now-ui-icons design_bullet-list-67"></i>
                     Train Details
                   </DropdownItem>
