@@ -1,5 +1,5 @@
 import React from "react";
-import Helmet from "react-helmet"
+import Helmet from "react-helmet";
 // react plugin used to create google maps
 
 // reactstrap components
@@ -72,6 +72,7 @@ function ContactUs() {
   const [success, setSuccess] = React.useState(false);
   const [error, setError] = React.useState(false);
   React.useEffect(() => {
+    window.scrollTo(0, 0);
     document.body.classList.add("contact-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
@@ -354,7 +355,7 @@ function ContactUs() {
 
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Luxury Rail Travel | Blue Train | Rovos Rail</title>
         <meta
           name="description"

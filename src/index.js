@@ -30,10 +30,10 @@ import LOBDetails from "views/examples/RovosRail/lobDetails";
 import ShongDetail from "views/examples/Shongololo/Details";
 import LandingPage from "views/examples/LandingPage.js";
 import ContactUs from "views/examples/ContactUs";
+import AboutUs from "views/examples/AboutUs";
 // others
 
 ReactDOM.render(
-  
   <BrowserRouter>
     <Switch>
       <Route path="/ratesB" render={props => <Rates {...props} />} />
@@ -77,10 +77,8 @@ ReactDOM.render(
         render={props => <ShongDetail {...props} />}
       />
       <Route path="/contact" render={props => <ContactUs {...props} />} />
-      <Route
-        path="/"
-        render={props => <LandingPage {...props} />}
-      />
+      <Route path="/aboutus" render={props => <AboutUs {...props} />} />
+      <Route path="/" render={props => <LandingPage {...props} />} />
       <Redirect to="/" />
     </Switch>
   </BrowserRouter>,

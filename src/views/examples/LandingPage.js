@@ -1,5 +1,5 @@
 import React from "react";
-import Helmet from "react-helmet"
+import Helmet from "react-helmet";
 import { Link } from "react-router-dom";
 
 // reactstrap components
@@ -22,7 +22,7 @@ function LandingPage() {
   });
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Luxury Rail Travel | Blue Train</title>
         <meta
           name="description"
@@ -35,7 +35,10 @@ function LandingPage() {
         <link rel="canonical" href="https://luxuryrailtravel.co.za" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Luxury Rail Travel | Blue Train |Rovos Rail" />
+        <meta
+          property="og:title"
+          content="Luxury Rail Travel | Blue Train |Rovos Rail"
+        />
         <meta
           property="og:description"
           content="Luxury Rail Travel, Blue Train, Rovos Rail"
@@ -58,16 +61,52 @@ function LandingPage() {
         >
           <Container>
             <Row>
-              <Col className="ml-auto mr-auto text-center" md="8">
+              <Col className="ml-auto mr-auto text-center" md="12">
                 <h2 style={{ color: "white" }} className="title">
-                  Who we are?
+                  Who We Are
                 </h2>
                 <h5 className="description">
-                  We specialise in luxury train travel throughout Africa. With
-                  over 20 years experience in the world of luxury train travel
-                  we can help you plan and book a once in a lifetime experience
-                  on one of our partner rail travel companies.
+                  Meet the Spirit of South Africa and the wonderful people of
+                  our magnificent nation. Indulge and spoil yourself and your
+                  partners, family, friends and colleagues with an extraordinary
+                  way of traveling, it’s all about the journey! Our team has
+                  been traveling by rail throughout South Africa and surrounds
+                  for over 5 decades.{" "}
                 </h5>
+                <h5 className="description">
+                  We are dedicated to meeting your needs on a close knit and
+                  personal experience. Traveling by rail is a timeless journey
+                  and we believe one that focuses on the gentle rhythms of life
+                  rather than the stressful modern way's.
+                </h5>
+                <h5 className="description">
+                  We are able to provide you with a complete custom travel
+                  package including but not limited to:
+                </h5>
+                <p className="description">
+                  <i className="now-ui-icons ui-1_check"></i> Return Flights
+                </p>
+                <p className="description">
+                  <i className="now-ui-icons ui-1_check"></i> Accomodation at
+                  final destination and before departure
+                </p>
+                <p className="description">
+                  <i className="now-ui-icons ui-1_check"></i> Excursions prior
+                  to and post your rail trip
+                </p>
+                <p className="description">
+                  <i className="now-ui-icons ui-1_check"></i> Transfers to and
+                  from the rail stations
+                </p>
+                <p className="description">
+                  <i className="now-ui-icons ui-1_check"></i> Advice on routes
+                  and rail partners
+                </p>
+                <p>
+                  <Link style={{ fontWeight: "bold" }} to="/aboutus">
+                    Read More
+                  </Link>
+                </p>
               </Col>
             </Row>
             <div className="separator separator-info"></div>
@@ -156,7 +195,7 @@ function LandingPage() {
                   <CardFooter>
                     <br />
                     <Button className="btn-round" color="primary" size="lg">
-                      <Link to="">View</Link>
+                      <Link to="/shongDetails">View</Link>
                     </Button>
                   </CardFooter>
                 </Card>

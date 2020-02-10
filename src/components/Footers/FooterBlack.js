@@ -18,9 +18,7 @@ function FooterBlack() {
           <nav>
             <ul>
               <li>
-                <a href="#" target="_blank">
-                  About Us
-                </a>
+                <Link to="/aboutus">About Us</Link>
               </li>
               <li>
                 <Link to="/contact">Contact Us</Link>

@@ -12,6 +12,7 @@ import Footer from "components/Footers/FooterWhite";
 
 function BlueTrainItinerary() {
   React.useEffect(() => {
+    window.scroll(0, 0);
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");

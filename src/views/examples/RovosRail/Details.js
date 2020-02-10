@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Helmet from "react-helmet"
 // react plugin used to create DropdownMenu for selecting items
 
@@ -11,6 +11,9 @@ import Footer from "components/Footers/FooterWhite";
 import Carousel from "./RovosCarousel";
 
 function RovosDetails() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
     <Helmet>
