@@ -1,5 +1,5 @@
 import React from "react";
-import Helmet from "react-helmet"
+import Helmet from "react-helmet";
 
 // reactstrap components
 import { Table, Container, Row, Col } from "reactstrap";
@@ -7,10 +7,10 @@ import { Table, Container, Row, Col } from "reactstrap";
 // core components
 
 import WhiteNavbar from "components/Navbars/WhiteNavbar";
-import Header from "components/Headers/RovosHeader";
+import Header from "components/Headers/ShongHeader";
 import Footer from "components/Footers/FooterWhite";
 
-function RovosRates() {
+function ShongRates() {
   React.useEffect(() => {
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
@@ -22,8 +22,8 @@ function RovosRates() {
   });
   return (
     <>
-    <Helmet>
-        <title>Luxury Rail Travel | Rovos  Rail | Blue Train</title>
+      <Helmet>
+        <title>Luxury Rail Travel | Rovos Rail | Blue Train</title>
         <meta
           name="description"
           content="Luxury Rail Travel, Blue Train, Rovos Rail"
@@ -52,7 +52,7 @@ function RovosRates() {
       <div className="wrapper">
         <div
           className="section section-about-us"
-          style={{ backgroundColor: "#095043" }}
+          style={{ backgroundColor: "#380812" }}
         >
           <Container>
             <br />
@@ -63,21 +63,27 @@ function RovosRates() {
               Prices below are per person sharing and Includes:
             </p>
             <p className="text-light">
-              Accomodation, Meals, Excursions as well as all beverages, incl
-              alcohol while on board.
+              • Accommodation • Breakfast and dinner • Lunch (where stated) •
+              Excursions accompanied by a qualified tour guide • Entrance fees
+              as per itinerary • Return transfers to golf courses (Good Hope
+              only) • Tea, coffee and bottled water on board • Government tax.
             </p>
+            <p className="text-light">
+              Exclusions:
+              <br />• Lunch off the train (where stated) • All beverages •
+              Laundry • Gratuities • Souvenirs • Course fees (Good Hope only;
+              green fees payable in advance) • Visas • Travel insurance • Pre-
+              and post-tour transfers, accommodation and flights.
+            </p>
+
             <p className="text-light">
               Single Supplement of 50% on all Suites.
             </p>
 
             <hr style={{ borderBottom: "1px solid white" }} />
             <br />
-            <h3 style={{ color: "white", textAlign: "left" }}>
-              Short Journeys
-            </h3>
-            <h3 style={{ color: "white", textAlign: "left" }}>
-              1 October 2019 - 30 September 2020{" "}
-            </h3>
+            <h3 style={{ color: "white", textAlign: "left" }}>Rates</h3>
+            <h3 style={{ color: "white", textAlign: "left" }}>2020 </h3>
 
             <Row>
               <Col className="ml-auto mr-auto text-center" md="12">
@@ -94,88 +100,28 @@ function RovosRates() {
                         <strong>Journey</strong>
                       </th>
                       <th>
-                        <strong>Pullman Suite</strong>
+                        <strong>Gold Suite</strong>
                       </th>
                       <th>
-                        <strong>Deluxe Suite</strong>
-                      </th>
-                      <th>
-                        <strong>Royal Suite</strong>
+                        <strong>Emerald Suite</strong>
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Cape Town</td>
-                      <td>R 22 350-00</td>
-                      <td>R 33 750-00</td>
-                      <td>R 45 000-00</td>
+                      <td>Good Hope</td>
+                      <td>R 95 400-00</td>
+                      <td>R 121 250-00</td>
                     </tr>
                     <tr style={{ backgroundColor: "#ccc", color: "#002147" }}>
-                      <td>Victoria Falls</td>
-                      <td>R 29 250-00</td>
-                      <td>R 44 000-00</td>
-                      <td>R 58 600-00</td>
+                      <td>Dune Express</td>
+                      <td>R 81 400-00</td>
+                      <td>R 101 000-00</td>
                     </tr>
                     <tr>
-                      <td>Durban Safari</td>
-                      <td>R 22 350-00</td>
-                      <td>R 33 750-00</td>
-                      <td>R 45 000-00</td>
-                    </tr>
-                  </tbody>
-                </Table>
-
-                <br />
-              </Col>
-            </Row>
-            <h3 style={{ color: "white", textAlign: "left" }}>
-              1 October 2020 - 30 September 2021{" "}
-            </h3>
-
-            <Row>
-              <Col className="ml-auto mr-auto text-center" md="12">
-                <Table style={{ color: "white" }} responsive borderless>
-                  <thead>
-                    <tr
-                      style={{
-                        backgroundColor: "#ccc",
-                        color: "#002147",
-                        fontWeight: "bold"
-                      }}
-                    >
-                      <th>
-                        <strong>Journey</strong>
-                      </th>
-                      <th>
-                        <strong>Pullman Suite</strong>
-                      </th>
-                      <th>
-                        <strong>Deluxe Suite</strong>
-                      </th>
-                      <th>
-                        <strong>Royal Suite</strong>
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Cape Town</td>
-                      <td>R 24 250-00</td>
-                      <td>R 36 500-00</td>
-                      <td>R 48 900-00</td>
-                    </tr>
-                    <tr style={{ backgroundColor: "#ccc", color: "#002147" }}>
-                      <td>Victoria Falls</td>
-                      <td>R 31 700-00</td>
-                      <td>R 48 000-00</td>
-                      <td>R 64 000-00</td>
-                    </tr>
-                    <tr>
-                      <td>Durban Safari</td>
-                      <td>R 24 250-00</td>
-                      <td>R 36 500-00</td>
-                      <td>R 48 900-00</td>
+                      <td>Southern Cross</td>
+                      <td>R 81 400-00</td>
+                      <td>R 101 000-00</td>
                     </tr>
                   </tbody>
                 </Table>
@@ -184,15 +130,7 @@ function RovosRates() {
               </Col>
             </Row>
             <hr style={{ borderBottom: "1px solid white" }} />
-            <br />
-            <h3 style={{ color: "white", textAlign: "left" }}>Long Journeys</h3>
-            <h6 style={{ color: "white", textAlign: "left" }}>
-              ( ) Indicates Single Supplement to be added to prices shown
-            </h6>
-            <br />
-            <h3 style={{ color: "white", textAlign: "left" }}>
-              1 January 2020 - 31 December 2020{" "}
-            </h3>
+            <h3 style={{ color: "white", textAlign: "left" }}>2021 </h3>
 
             <Row>
               <Col className="ml-auto mr-auto text-center" md="12">
@@ -209,46 +147,28 @@ function RovosRates() {
                         <strong>Journey</strong>
                       </th>
                       <th>
-                        <strong>Pullman Suite</strong>
+                        <strong>Gold Suite</strong>
                       </th>
                       <th>
-                        <strong>Deluxe Suite</strong>
-                      </th>
-                      <th>
-                        <strong>Royal Suite</strong>
+                        <strong>Emerald Suite</strong>
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Golf Safari</td>
-                      <td>R 65 000.00 (40%)</td>
-                      <td>R 96 000.00 (40%)</td>
-                      <td>R 127 000-00 (40%)</td>
+                      <td>Good Hope</td>
+                      <td>R 104 000-00</td>
+                      <td>R 132 000-00</td>
                     </tr>
                     <tr style={{ backgroundColor: "#ccc", color: "#002147" }}>
-                      <td>Namibia Safari</td>
-                      <td>R 75 000.00 (50%)</td>
-                      <td>R 111 000.00 (50%)</td>
-                      <td>R 149 000-00 (50%)</td>
+                      <td>Dune Express</td>
+                      <td>R 92 500-00</td>
+                      <td>R 113 500-00</td>
                     </tr>
                     <tr>
-                      <td>African Collage</td>
-                      <td>R 83 000.00 (50%)</td>
-                      <td>R 124 000.00 (50%)</td>
-                      <td>R 165 000-00 (50%)</td>
-                    </tr>
-                    <tr style={{ backgroundColor: "#ccc", color: "#002147" }}>
-                      <td>Dar Es Salaam</td>
-                      <td>US$ 12 820.00 ($ 5 695.00)</td>
-                      <td>US$ 16 995.00 ($ 7 385.00)</td>
-                      <td>US$ 22 190.00 (POA)</td>
-                    </tr>
-                    <tr>
-                      <td>DAR-Lobito</td>
-                      <td>US$ 12 820.00 ($ 5 695.00)</td>
-                      <td>US$ 16 995.00 ($ 7 385.00)</td>
-                      <td>US$ 22 190.00 (POA)</td>
+                      <td>Southern Cross</td>
+                      <td>R 92 500-00</td>
+                      <td>R 113 500-00</td>
                     </tr>
                   </tbody>
                 </Table>
@@ -256,73 +176,6 @@ function RovosRates() {
                 <br />
               </Col>
             </Row>
-            <h3 style={{ color: "white", textAlign: "left" }}>
-              1 January 2021 - 31 December 2021{" "}
-            </h3>
-
-            <Row>
-              <Col className="ml-auto mr-auto text-center" md="12">
-                <Table style={{ color: "white" }} responsive borderless>
-                  <thead>
-                    <tr
-                      style={{
-                        backgroundColor: "#ccc",
-                        color: "#002147",
-                        fontWeight: "bold"
-                      }}
-                    >
-                      <th>
-                        <strong>Journey</strong>
-                      </th>
-                      <th>
-                        <strong>Pullman Suite</strong>
-                      </th>
-                      <th>
-                        <strong>Deluxe Suite</strong>
-                      </th>
-                      <th>
-                        <strong>Royal Suite</strong>
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Golf Safari</td>
-                      <td>R 69 000.00 (40%)</td>
-                      <td>R 105 000.00 (40%)</td>
-                      <td>R 138 000-00 (40%)</td>
-                    </tr>
-                    <tr style={{ backgroundColor: "#ccc", color: "#002147" }}>
-                      <td>Namibia Safari</td>
-                      <td>R 81 500.00 (50%)</td>
-                      <td>R 120 000.00 (50%)</td>
-                      <td>R 162 000-00 (50%)</td>
-                    </tr>
-                    <tr>
-                      <td>African Collage</td>
-                      <td>R 90 000.00 (50%)</td>
-                      <td>R 135 000.00 (50%)</td>
-                      <td>R 179 000-00 (50%)</td>
-                    </tr>
-                    <tr style={{ backgroundColor: "#ccc", color: "#002147" }}>
-                      <td>Dar Es Salaam</td>
-                      <td>US$ 13 200.00 ($ 5 865.00)</td>
-                      <td>US$ 17 500.00 ($ 7 605.00)</td>
-                      <td>US$ 22 900.00 (POA)</td>
-                    </tr>
-                    <tr>
-                      <td>DAR-Lobito</td>
-                      <td>US$ 13 200.00 ($ 5 865.00)</td>
-                      <td>US$ 17 500.00 ($ 7 605.00)</td>
-                      <td>US$ 22 900.00 (POA)</td>
-                    </tr>
-                  </tbody>
-                </Table>
-
-                <br />
-              </Col>
-            </Row>
-            <br />
           </Container>
         </div>
 
@@ -332,4 +185,4 @@ function RovosRates() {
   );
 }
 
-export default RovosRates;
+export default ShongRates;

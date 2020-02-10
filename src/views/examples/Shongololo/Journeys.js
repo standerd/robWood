@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Helmet from "react-helmet"
+import Helmet from "react-helmet";
 
 // reactstrap components
 import {
@@ -17,11 +17,12 @@ import {
 // core components
 
 import WhiteNavbar from "components/Navbars/WhiteNavbar";
-import Header from "components/Headers/RovosHeader";
+import Header from "components/Headers/ShongHeader";
 import Footer from "components/Footers/FooterWhite";
 
 function Journeys() {
   React.useEffect(() => {
+    window.scroll(0, 0);
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
@@ -32,8 +33,8 @@ function Journeys() {
   });
   return (
     <>
-    <Helmet>
-        <title>Luxury Rail Travel | Rovos  Rail | Blue Train</title>
+      <Helmet>
+        <title>Luxury Rail Travel | Rovos Rail | Blue Train</title>
         <meta
           name="description"
           content="Luxury Rail Travel, Blue Train, Rovos Rail"
@@ -60,7 +61,7 @@ function Journeys() {
       <WhiteNavbar />
       <Header />
       <div className="wrapper">
-        <div style={{ backgroundColor: "#095043", width: "100%" }}>
+        <div style={{ backgroundColor: "#380812", width: "100%" }}>
           <Container>
             <br />
             <h1
@@ -82,15 +83,15 @@ function Journeys() {
                 >
                   <CardImg
                     alt="..."
-                    src={require("assets/img/rovos/cpt.jpg")}
+                    src={require("assets/img/shong/dune.jpg")}
                     top
                   ></CardImg>
                   <CardBody>
                     <CardText>
-                      Cape Town
+                      Dune Express
                       <br></br>
-                      <Button style={{ backgroundColor: "#095043" }}>
-                        <Link style={{ color: "white" }} to="/cptDetails">
+                      <Button style={{ backgroundColor: "#380812" }}>
+                        <Link style={{ color: "white" }} to="/dune">
                           Details
                         </Link>
                       </Button>
@@ -108,15 +109,15 @@ function Journeys() {
                 >
                   <CardImg
                     alt="..."
-                    src={require("assets/img/rovos/dbn.jpg")}
+                    src={require("assets/img/shong/goodHope.jpg")}
                     top
                   ></CardImg>
                   <CardBody>
                     <CardText>
-                      Durban
+                      Good Hope
                       <br></br>
-                      <Button style={{ backgroundColor: "#095043" }}>
-                        <Link style={{ color: "white" }} to="/dbnDetails">
+                      <Button style={{ backgroundColor: "#380812" }}>
+                        <Link style={{ color: "white" }} to="/goodHope">
                           Details
                         </Link>
                       </Button>
@@ -134,15 +135,15 @@ function Journeys() {
                 >
                   <CardImg
                     alt="..."
-                    src={require("assets/img/rovos/vic.jpg")}
+                    src={require("assets/img/shong/scross.jpg")}
                     top
                   ></CardImg>
                   <CardBody>
                     <CardText>
-                      Victoria Falls
+                      Southern Cross
                       <br></br>
-                      <Button style={{ backgroundColor: "#095043" }}>
-                        <Link style={{ color: "white" }} to="/vicDetails">
+                      <Button style={{ backgroundColor: "#380812" }}>
+                        <Link style={{ color: "white" }} to="/southCross">
                           Details
                         </Link>
                       </Button>
@@ -151,140 +152,7 @@ function Journeys() {
                 </Card>
               </Col>
             </Row>
-            <Row>
-              <Col className="ml-auto mr-auto text-center" md="4">
-                <Card
-                  style={{
-                    width: "20rem",
-                    backgroundColor: "rgba(255,255,255,0.8)",
-                    border: "1px solid white"
-                  }}
-                >
-                  <CardImg
-                    alt="..."
-                    src={require("assets/img/rovos/golf.jpg")}
-                    top
-                  ></CardImg>
-                  <CardBody>
-                    <CardText>
-                      Golf Safari
-                      <br></br>
-                      <Button style={{ backgroundColor: "#095043" }}>
-                        <Link style={{ color: "white" }} to="/golfDetails">
-                          Details
-                        </Link>
-                      </Button>
-                    </CardText>
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col className="ml-auto mr-auto text-center" md="4">
-                <Card
-                  style={{
-                    width: "20rem",
-                    backgroundColor: "rgba(255,255,255,0.8)",
-                    border: "1px solid white"
-                  }}
-                >
-                  <CardImg
-                    alt="..."
-                    src={require("assets/img/rovos/collage.jpg")}
-                    top
-                  ></CardImg>
-                  <CardBody>
-                    <CardText>
-                      African Collage
-                      <br></br>
-                      <Button style={{ backgroundColor: "#095043" }}>
-                        <Link style={{ color: "white" }} to="/collDetails">
-                          Details
-                        </Link>
-                      </Button>
-                    </CardText>
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col className="ml-auto mr-auto text-center" md="4">
-                <Card
-                  style={{
-                    width: "20rem",
-                    backgroundColor: "rgba(255,255,255,0.8)",
-                    border: "1px solid white"
-                  }}
-                >
-                  <CardImg
-                    alt="..."
-                    src={require("assets/img/rovos/nam.jpg")}
-                    top
-                  ></CardImg>
-                  <CardBody>
-                    <CardText>
-                      Namibia
-                      <br></br>
-                      <Button style={{ backgroundColor: "#095043" }}>
-                        <Link style={{ color: "white" }} to="/namDetails">
-                          Details
-                        </Link>
-                      </Button>
-                    </CardText>
-                  </CardBody>
-                </Card>
-              </Col>
-            </Row>
-            <Row>
-              <Col className="ml-auto mr-auto text-center" md="6">
-                <Card
-                  style={{
-                    width: "20rem",
-                    backgroundColor: "rgba(255,255,255,0.8)",
-                    border: "1px solid white"
-                  }}
-                >
-                  <CardImg
-                    alt="..."
-                    src={require("assets/img/rovos/dar.jpg")}
-                    top
-                  ></CardImg>
-                  <CardBody>
-                    <CardText>
-                      Dar Es Salaam
-                      <br></br>
-                      <Button style={{ backgroundColor: "#095043" }}>
-                        <Link style={{ color: "white" }} to="/darDetails">
-                          Details
-                        </Link>
-                      </Button>
-                    </CardText>
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col className="ml-auto mr-auto text-center" md="6">
-                <Card
-                  style={{
-                    width: "20rem",
-                    backgroundColor: "rgba(255,255,255,0.8)",
-                    border: "1px solid white"
-                  }}
-                >
-                  <CardImg
-                    alt="..."
-                    src={require("assets/img/rovos/lob.jpg")}
-                    top
-                  ></CardImg>
-                  <CardBody>
-                    <CardText>
-                      Lobito
-                      <br></br>
-                      <Button style={{ backgroundColor: "#095043" }}>
-                        <Link style={{ color: "white" }} to="/lobDetails">
-                          Details
-                        </Link>
-                      </Button>
-                    </CardText>
-                  </CardBody>
-                </Card>
-              </Col>
-            </Row>
+
             <br />
           </Container>
         </div>

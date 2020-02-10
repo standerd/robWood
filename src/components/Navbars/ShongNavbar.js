@@ -150,13 +150,23 @@ function WhiteNavbar() {
                     Shongololo Express
                   </p>
                 </DropdownToggle>
-                <DropdownMenu
-                  aria-labelledby="navbarDropdownMenuLink1"
-                  right
-                >
+                <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
                   <DropdownItem to="/shongDetails" tag={Link}>
                     <i className="now-ui-icons travel_info"></i>
                     Details
+                  </DropdownItem>
+
+                  <DropdownItem to="/scheduleShong" tag={Link}>
+                    <i className="now-ui-icons ui-1_calendar-60"></i>
+                    Schedule
+                  </DropdownItem>
+                  <DropdownItem to="/ratesShong" tag={Link}>
+                    <i className="now-ui-icons business_money-coins"></i>
+                    Rates
+                  </DropdownItem>
+                  <DropdownItem to="/shongJourneys" tag={Link}>
+                    <i className="now-ui-icons travel_info"></i>
+                    Itinerary
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

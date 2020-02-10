@@ -28,6 +28,12 @@ import CollageDetails from "views/examples/RovosRail/collDetails";
 import DARDetails from "views/examples/RovosRail/darDetails";
 import LOBDetails from "views/examples/RovosRail/lobDetails";
 import ShongDetail from "views/examples/Shongololo/Details";
+import ShongJourneys from "views/examples/Shongololo/Journeys";
+import ShongSched from "views/examples/Shongololo/Schedule";
+import ShongRates from "views/examples/Shongololo/Rates";
+import Dune from "views/examples/Shongololo/duneDetails";
+import GoodHope from "views/examples/Shongololo/goodHope";
+import SouthCross from "views/examples/Shongololo/southCross";
 import LandingPage from "views/examples/LandingPage.js";
 import ContactUs from "views/examples/ContactUs";
 import AboutUs from "views/examples/AboutUs";
@@ -76,6 +82,18 @@ ReactDOM.render(
         path="/shongDetails"
         render={props => <ShongDetail {...props} />}
       />
+      <Route
+        path="/shongJourneys"
+        render={props => <ShongJourneys {...props} />}
+      />
+      <Route path="/ratesShong" render={props => <ShongRates {...props} />} />
+      <Route
+        path="/scheduleShong"
+        render={props => <ShongSched {...props} />}
+      />
+      <Route path="/dune" render={props => <Dune {...props} />} />
+      <Route path="/goodHope" render={props => <GoodHope {...props} />} />
+      <Route path="/southCross" render={props => <SouthCross {...props} />} />
       <Route path="/contact" render={props => <ContactUs {...props} />} />
       <Route path="/aboutus" render={props => <AboutUs {...props} />} />
       <Route path="/" render={props => <LandingPage {...props} />} />

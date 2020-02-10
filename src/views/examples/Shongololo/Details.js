@@ -10,7 +10,7 @@ import WhiteNavbar from "components/Navbars/ShongNavbar";
 import Footer from "components/Footers/FooterWhite";
 import Carousel from "./ShongCar";
 
-function RovosDetails() {
+function ShongDetails() {
   useEffect(() => {
     window.scrollTo(0, 0);
   });
@@ -322,4 +322,4 @@ function RovosDetails() {
   );
 }
 
-export default RovosDetails;
+export default ShongDetails;
