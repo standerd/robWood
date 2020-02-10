@@ -147,7 +147,7 @@ function WhiteNavbar() {
                   onClick={e => e.preventDefault()}
                 >
                   <i className="now-ui-icons transportation_bus-front-12"></i>
-                  <p style={{ color: "#002147", fontWeight: "bold" }}>
+                  <p style={{ color: "#380812", fontWeight: "bold" }}>
                     Shongololo Express
                   </p>
                 </DropdownToggle>
@@ -179,7 +179,9 @@ function WhiteNavbar() {
                   }}
                   className="nav-link btn-default"
                 >
-                  Specials
+                  <Link style={{ color: "black" }} to="/specials">
+                    Specials
+                  </Link>
                 </Button>
               </NavItem>
               <NavItem>

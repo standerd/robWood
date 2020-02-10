@@ -7,7 +7,7 @@ import { Table, Container, Row, Col } from "reactstrap";
 
 // core components
 
-import WhiteNavbar from "components/Navbars/WhiteNavbar";
+import WhiteNavbar from "components/Navbars/ShongNavbar";
 import Header from "components/Headers/ShongHeader";
 import Footer from "components/Footers/FooterWhite";
 

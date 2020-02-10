@@ -157,7 +157,9 @@ function LandingPage() {
                   <CardFooter>
                     <br />
                     <Button className="btn-round" color="primary" size="lg">
-                      <Link to="/details">View</Link>
+                      <Link style={{ fontWeight: "bold" }} to="/details">
+                        View
+                      </Link>
                     </Button>
                   </CardFooter>
                 </Card>
@@ -176,7 +178,9 @@ function LandingPage() {
                   <CardFooter>
                     <br />
                     <Button className="btn-round" color="primary" size="lg">
-                      <Link to="/detailsRovos">View</Link>
+                      <Link style={{ fontWeight: "bold" }} to="/detailsRovos">
+                        View
+                      </Link>
                     </Button>
                   </CardFooter>
                 </Card>
@@ -195,7 +199,9 @@ function LandingPage() {
                   <CardFooter>
                     <br />
                     <Button className="btn-round" color="primary" size="lg">
-                      <Link to="/shongDetails">View</Link>
+                      <Link style={{ fontWeight: "bold" }} to="/shongDetails">
+                        View
+                      </Link>
                     </Button>
                   </CardFooter>
                 </Card>

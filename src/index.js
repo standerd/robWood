@@ -37,6 +37,8 @@ import SouthCross from "views/examples/Shongololo/southCross";
 import LandingPage from "views/examples/LandingPage.js";
 import ContactUs from "views/examples/ContactUs";
 import AboutUs from "views/examples/AboutUs";
+import Specials from "views/examples/Specials";
+
 // others
 
 ReactDOM.render(
@@ -96,6 +98,7 @@ ReactDOM.render(
       <Route path="/southCross" render={props => <SouthCross {...props} />} />
       <Route path="/contact" render={props => <ContactUs {...props} />} />
       <Route path="/aboutus" render={props => <AboutUs {...props} />} />
+      <Route path="/specials" render={props => <Specials {...props} />} />
       <Route path="/" render={props => <LandingPage {...props} />} />
       <Redirect to="/" />
     </Switch>

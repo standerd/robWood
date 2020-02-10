@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Helmet from "react-helmet"
+import Helmet from "react-helmet";
 
 // reactstrap components
 import {
@@ -16,13 +16,13 @@ import {
 
 // core components
 
-import WhiteNavbar from "components/Navbars/WhiteNavbar";
+import WhiteNavbar from "components/Navbars/RovosNav";
 import Header from "components/Headers/RovosHeader";
 import Footer from "components/Footers/FooterWhite";
 
 function Journeys() {
   React.useEffect(() => {
-    window.scroll(0,0);
+    window.scroll(0, 0);
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
@@ -33,8 +33,8 @@ function Journeys() {
   });
   return (
     <>
-    <Helmet>
-        <title>Luxury Rail Travel | Rovos  Rail | Blue Train</title>
+      <Helmet>
+        <title>Luxury Rail Travel | Rovos Rail | Blue Train</title>
         <meta
           name="description"
           content="Luxury Rail Travel, Blue Train, Rovos Rail"
