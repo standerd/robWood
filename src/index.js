@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import {hydrate,render} from "react-dom";
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 
 // styles
@@ -40,9 +40,11 @@ import AboutUs from "views/examples/AboutUs";
 import Specials from "views/examples/Specials";
 
 // others
+const rootElement = document.getElementById("root")
 
-ReactDOM.render(
-  <BrowserRouter>
+if(rootElement.hasChildNodes()){
+  hydrate(
+    <BrowserRouter>
     <Switch>
       <Route path="/ratesB" render={props => <Rates {...props} />} />
       <Route path="/scheduleB" render={props => <Schedule {...props} />} />
@@ -102,6 +104,71 @@ ReactDOM.render(
       <Route path="/" render={props => <LandingPage {...props} />} />
       <Redirect to="/" />
     </Switch>
-  </BrowserRouter>,
-  document.getElementById("root")
-);
+  </BrowserRouter>,rootElement);
+} else {
+  render(<BrowserRouter>
+    <Switch>
+      <Route path="/ratesB" render={props => <Rates {...props} />} />
+      <Route path="/scheduleB" render={props => <Schedule {...props} />} />
+      <Route path="/details" render={props => <Details {...props} />} />
+      <Route path="/itinerary" render={props => <Itinerary {...props} />} />
+      <Route
+        path="/itineraryK"
+        render={props => <ItineraryKruger {...props} />}
+      />
+      <Route path="/scheduleK" render={props => <KrugerRates {...props} />} />
+      <Route
+        path="/detailsRovos"
+        render={props => <RovosDetails {...props} />}
+      />
+      <Route path="/ratesRovos" render={props => <RovosRates {...props} />} />
+      <Route
+        path="/scheduleRovos"
+        render={props => <RovosSchedule {...props} />}
+      />
+      <Route
+        path="/itineraryRovos"
+        render={props => <RovosItinerary {...props} />}
+      />
+      <Route
+        path="/cptDetails"
+        render={props => <CapeTownDetails {...props} />}
+      />
+      <Route path="/dbnDetails" render={props => <DBNDetails {...props} />} />
+      <Route path="/vicDetails" render={props => <VICDetails {...props} />} />
+      <Route path="/golfDetails" render={props => <GolfDetails {...props} />} />
+      <Route path="/namDetails" render={props => <NamDetails {...props} />} />
+      <Route
+        path="/collDetails"
+        render={props => <CollageDetails {...props} />}
+      />
+      <Route path="/darDetails" render={props => <DARDetails {...props} />} />
+      <Route path="/lobDetails" render={props => <LOBDetails {...props} />} />
+      <Route
+        path="/shongDetails"
+        render={props => <ShongDetail {...props} />}
+      />
+      <Route
+        path="/shongJourneys"
+        render={props => <ShongJourneys {...props} />}
+      />
+      <Route path="/ratesShong" render={props => <ShongRates {...props} />} />
+      <Route
+        path="/scheduleShong"
+        render={props => <ShongSched {...props} />}
+      />
+      <Route path="/dune" render={props => <Dune {...props} />} />
+      <Route path="/goodHope" render={props => <GoodHope {...props} />} />
+      <Route path="/southCross" render={props => <SouthCross {...props} />} />
+      <Route path="/contact" render={props => <ContactUs {...props} />} />
+      <Route path="/aboutus" render={props => <AboutUs {...props} />} />
+      <Route path="/specials" render={props => <Specials {...props} />} />
+      <Route path="/" render={props => <LandingPage {...props} />} />
+      <Redirect to="/" />
+    </Switch>
+  </BrowserRouter>,rootElement);
+}
+
+
+  
+
