@@ -23,32 +23,27 @@ function LandingPage() {
   return (
     <>
       <Helmet>
-        <title>Luxury Rail Travel | Blue Train</title>
-        <meta
-          name="description"
-          content="Luxury Rail Travel offers you customised packages on the Blue Train and Rovos Rail"
-        />
-        <meta
-          name="robots"
-          content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-        />
-        <link rel="canonical" href="https://luxuryrailtravel.co.za" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Luxury Rail Travel | Blue Train |Rovos Rail"
-        />
-        <meta
-          property="og:description"
-          content="Luxury Rail Travel, Blue Train, Rovos Rail"
-        />
-        <meta property="og:url" content="https://luxuryrailtravel.co.za" />
-        <meta property="og:site_name" content="Luxury Rail Travel" />
-        <meta property="og:image" content="blue4.jpg" />
-        <meta property="og:image:secure_url" content="blue4.jpg" />
-        <meta property="og:image:width" content="1280" />
-        <meta property="og:image:height" content="720" />
+      <meta charset="utf-8" />
+      <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon.png" />
+      <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-icon.png" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#000000" />
+      <meta
+      name="robots"
+      content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      />
+      <link rel="canonical" href="https://luxuryrailtravel.co.za" />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:type" content="website" />
+      <meta property="og:Luxury Rail Travel" content="Luxury rail travel packages, blue train and rovos rail" />
+      <meta property="og:title" content="Blue Train and Rovos Rail - Tailored Packages and Special Offers" />
+      <meta property="og:description" content="Luxury rail travel packages, offering various routes in South Africa and Africa on the Blue Train and Rovos Rail." />
+      <meta property="og:url" content="https://luxuryrailtravel.co.za/" />
+      <meta name="description" content="Luxury rail travel packages, offering various routes in South Africa and Africa on the Blue Train and Rovos Rail." />
+      <meta name="keywords" content="Luxury Rail Travel, The Blue Train, Blue Train, Blou Trein, bloutrein, Rail Travel, train travel" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		  <meta name="google-site-verification" content="bQ0IYcOFw7qLmul2Zuj7uSbvXu8jk53weO1lyqbqudA" />
+      <title>Luxury Rail Travel</title>
       </Helmet>
       {/* <ScrollTransparentNavbar />
        */}
@@ -149,7 +144,7 @@ function LandingPage() {
                   style={{ border: "1px solid #002147", padding: "1rem" }}
                 >
                   <img
-                    alt="..."
+                    alt="blue train logo"
                     className="img img-raised"
                     src={require("assets/img/bluetrain/Blue.jpg")}
                   ></img>
@@ -170,7 +165,7 @@ function LandingPage() {
                   style={{ border: "1px solid #002147", padding: "1rem" }}
                 >
                   <img
-                    alt="..."
+                    alt="rovos logo"
                     className="img img-raised"
                     src={require("assets/img/rovos/Rovos.jpg")}
                   ></img>
@@ -191,7 +186,7 @@ function LandingPage() {
                   style={{ border: "1px solid #002147", padding: "1rem" }}
                 >
                   <img
-                    alt="..."
+                    alt="shongololo logo"
                     className="img img-raised"
                     src={require("assets/img/Shong.jpg")}
                   ></img>
